@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Challenge_Chapter5</string>
+    <string name="login">Login</string>
+    <string name="input_email_anda">Input your email</string>
+    <string name="input_password_anda">Input your password</string>
+    <string name="belum_punya_akun">Don\'t have an account? Register</string>
+    <string name="register">Register</string>
+    <string name="input_username_anda">Input your username</string>
+    <string name="input_nama_lengkap_anda">Input your full name</string>
+    <string name="input_tanggal_lahir_anda">Input your date of birth</string>
+    <string name="input_alamat_anda">Input your address</string>
+    <string name="konfirmasi_password">Confirm password</string>
+    <string name="home">Home</string>
+    <string name="selamat_datang">"Welcome, "</string>
+    <string name="profil">Profile</string>
+    <string name="informasi_saya">My Information</string>
+    <string name="ubah_profil">Edit Profile</string>
+    <string name="username">Username</string>
+    <string name="nama_lengkap">Full Name</string>
+    <string name="tanggal_lahir">Date of Birth</string>
+    <string name="alamat">Address</string>
+    <string name="ubah">Edit</string>
+    <string name="film">"Film: "</string>
+    <string name="film_pendek">"Short Film: "</string>
+    <string name="acara_tv">"Tv Show: "</string>
+    <string name="permainan_video">"Video Game: "</string>
+    <string name="tidak_boleh_kosong">Field cannot be empty!</string>
+    <string name="register_berhasil">Register success!</string>
+    <string name="register_gagal">Register failed!</string>
+    <string name="login_berhasil">Login success!</string>
+    <string name="login_gagal">Login failed!</string>
+    <string name="password_tidak_sama">Password doesn\'t match!</string>
+    <string name="email_password_salah">Wrong email/password!</string>
+    <string name="gagal_load_data">Failed to load data</string>
+    <string name="pengaturan">Settings</string>
+    <string name="ubah_bahasa">Change languange</string>
+    <string name="bahasa_indonesia">Indonesia</string>
+    <string name="bahasa_inggris">English</string>
+    <string name="logout_berhasil">Logout success!</string>
+    <string name="pilih_tanggal">Select Date</string>
+</resources>

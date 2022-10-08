@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Challenge_Chapter5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login">Login</string>
+    <string name="input_email_anda">Masukkan email anda</string>
+    <string name="input_password_anda">Masukkan password anda</string>
+    <string name="belum_punya_akun">Belum punya akun? Register</string>
+    <string name="register">Register</string>
+    <string name="input_username_anda">Input username anda</string>
+    <string name="input_nama_lengkap_anda">Input nama lengkap anda</string>
+    <string name="input_tanggal_lahir_anda">Input tanggal lahir anda</string>
+    <string name="input_alamat_anda">Input alamat anda</string>
+    <string name="konfirmasi_password">Konfirmasi password</string>
+    <string name="home">Home</string>
+    <string name="selamat_datang">Selamat Datang,</string>
+    <string name="profil">Profil</string>
+    <string name="informasi_saya">Informasi Saya</string>
+    <string name="ubah_profil">Ubah Profil</string>
+    <string name="username">Username</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="tanggal_lahir">Tanggal Lahir</string>
+    <string name="alamat">Alamat</string>
+    <string name="ubah">Ubah</string>
+    <string name="film">Film:</string>
+    <string name="film_pendek">Film pendek:</string>
+    <string name="acara_tv">Acara Tv:</string>
+    <string name="permainan_video">Permainan Video:</string>
+    <string name="tidak_boleh_kosong">Tidak boleh kosong!</string>
+    <string name="register_berhasil">Registrasi berhasil!</string>
+    <string name="register_gagal">Registrasi gagal!</string>
+    <string name="login_berhasil">Login berhasil!</string>
+    <string name="login_gagal">Login gagal!</string>
+    <string name="password_tidak_sama">Password tidak sama!</string>
+    <string name="email_password_salah">Email/Password salah!</string>
+    <string name="gagal_load_data">Gagal memuat data</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="ubah_bahasa">Ubah bahasa</string>
+    <string name="bahasa_indonesia">Bahasa Indonesia</string>
+    <string name="bahasa_inggris">Bahasa Inggris</string>
+    <string name="logout_berhasil">Logout berhasil!</string>
+    <string name="pilih_tanggal">Pilih Tanggal</string>
+</resources>
