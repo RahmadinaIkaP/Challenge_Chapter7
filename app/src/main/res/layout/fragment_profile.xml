@@ -6,13 +6,13 @@
     <data>
         <variable
             name="dataUser"
-            type="binar.academy.challenge_chapter5.data.model.UserResponse" />
+            type="binar.academy.challenge_chapter5.model.UserResponse" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.profile.ProfileFragment">
+        tools:context=".view.profile.ProfileFragment">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/toolbarProfile"

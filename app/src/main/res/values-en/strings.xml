@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Challenge_Chapter5</string>
+    <string name="app_name">Disney App</string>
     <string name="login">Login</string>
     <string name="input_email_anda">Input your email</string>
     <string name="input_password_anda">Input your password</string>
@@ -39,4 +39,13 @@
     <string name="bahasa_inggris">English</string>
     <string name="logout_berhasil">Logout success!</string>
     <string name="pilih_tanggal">Select Date</string>
+    <string name="detail_karakter">Character Detail</string>
+    <string name="favorite">Favorite</string>
+    <string name="berhasil_favorit">Successfully add to favorite!</string>
+    <string name="berhasil_unfavorit">Successfully remove from favorite!</string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="permission_denied_msg">Permission is denied, Please allow permissions from settings</string>
+    <string name="settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="pilih_gambar">Choose image</string>
 </resources>

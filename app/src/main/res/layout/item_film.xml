@@ -3,9 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-        <variable
-            name="dataDisneyChara"
-            type="binar.academy.challenge_chapter5.data.model.DisneyCharaResponse" />
+
     </data>
 
     <com.google.android.material.card.MaterialCardView
@@ -31,11 +29,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tvFilmTitle"
+                android:id="@+id/tvCharaName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text='@{dataDisneyChara.name, default="Nama Character"}'
+                android:text="Nama Karakter"
                 android:textColor="@color/semi_black"
                 android:textSize="18sp"
                 android:textStyle="bold"

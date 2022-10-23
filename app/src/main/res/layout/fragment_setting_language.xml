@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:background="@color/white"
-    tools:context=".ui.profile.SettingLanguageFragment">
+    tools:context=".view.profile.SettingLanguageFragment">
 
     <RadioGroup
         android:layout_width="match_parent"

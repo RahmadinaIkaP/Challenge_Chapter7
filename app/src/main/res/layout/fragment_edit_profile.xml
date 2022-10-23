@@ -6,13 +6,13 @@
     <data>
         <variable
             name="dataUserUpdate"
-            type="binar.academy.challenge_chapter5.data.model.UserResponse" />
+            type="binar.academy.challenge_chapter5.model.UserResponse" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.profile.EditProfileFragment">
+        tools:context=".view.profile.EditProfileFragment">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/toolbarUpdateProfile"
@@ -64,24 +64,50 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/toolbarUpdateProfile">
 
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp">
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/dummy_profile" />
+
+                    <ImageButton
+                        android:id="@+id/btnEditPhotoProfile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/background_rounded"
+                        android:src="@drawable/ic_edit_profile" />
+
+                </RelativeLayout>
 
                 <TextView
                     android:id="@+id/tvLabelUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/username"
-                    android:textSize="14sp"
                     android:textColor="@color/semi_black"
-                    android:textStyle="bold"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -90,10 +116,10 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etUsername"
-                        android:backgroundTint="@android:color/transparent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{dataUserUpdate.username, default="null"}'/>
+                        android:backgroundTint="@android:color/transparent"
+                        android:text='@{dataUserUpdate.username, default="null"}' />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,9 +129,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/nama_lengkap"
-                    android:textSize="14sp"
                     android:textColor="@color/semi_black"
-                    android:textStyle="bold"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -114,10 +140,10 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etFullName"
-                        android:backgroundTint="@android:color/transparent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{dataUserUpdate.fullname, default="null"}'/>
+                        android:backgroundTint="@android:color/transparent"
+                        android:text='@{dataUserUpdate.fullname, default="null"}' />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -127,26 +153,26 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/tanggal_lahir"
-                    android:textSize="14sp"
                     android:textColor="@color/semi_black"
-                    android:textStyle="bold"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:background="@drawable/customedittext"
-                    android:orientation="horizontal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp">
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/customedittext"
+                    android:orientation="horizontal">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etBornDate"
                         android:layout_width="320dp"
                         android:layout_height="match_parent"
                         android:background="@android:color/transparent"
+                        android:padding="16dp"
                         android:text='@{dataUserUpdate.bornDate, default="null"}'
                         android:textColorHint="@color/gray"
                         android:textSize="16sp"
-                        android:padding="16dp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
@@ -169,9 +195,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="@string/alamat"
-                    android:textSize="14sp"
                     android:textColor="@color/semi_black"
-                    android:textStyle="bold"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -180,10 +206,10 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etAddress"
-                        android:backgroundTint="@android:color/transparent"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text='@{dataUserUpdate.address, default="null"}'/>
+                        android:backgroundTint="@android:color/transparent"
+                        android:text='@{dataUserUpdate.address, default="null"}' />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
