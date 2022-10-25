@@ -94,4 +94,9 @@ dependencies {
 
     implementation "pl.droidsonroids.gif:android-gif-drawable:1.2.22"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Optional -- Mockk framework
+    implementation "io.mockk:mockk:1.13.1"
+    testImplementation "io.mockk:mockk:1.13.1"
+
 }
