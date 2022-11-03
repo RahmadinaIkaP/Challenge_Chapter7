@@ -47,14 +47,16 @@
         <com.google.android.material.textfield.TextInputLayout
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/gray">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmailLogin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/input_email_anda"
-                android:inputType="textEmailAddress" />
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/gray"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,6 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:backgroundTint="@color/gray"
             app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -70,7 +73,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="@string/input_password_anda"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColorHint="@color/gray"/>
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,6 +92,69 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#C1C1C1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="Atau login dengan"
+            android:textSize="16sp"
+            android:textColor="@color/gray"/>
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:background="#C1C1C1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLoginWithGoogle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/button_bordered"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/google_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Google"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/btnToRegister"
         android:layout_width="wrap_content"
@@ -98,6 +165,6 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/btnLoginWithGoogle" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

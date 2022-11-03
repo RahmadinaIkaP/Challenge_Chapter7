@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         tools:context=".view.profile.ProfileFragment">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -99,6 +100,7 @@
                 android:text='@{dataUser.username, default="Username"}'
                 android:textSize="17sp"
                 android:textStyle="bold"
+                android:textColor="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvInformasiSaya" />
 
@@ -109,6 +111,7 @@
                 android:layout_marginTop="5dp"
                 android:text='@{dataUser.email, default="Email"}'
                 android:textSize="15sp"
+                android:textColor="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
 
@@ -118,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:text='@{dataUser.fullname, default="Nama Lengkap"}'
                 android:textSize="15sp"
+                android:textColor="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
@@ -127,6 +131,7 @@
                 android:layout_height="wrap_content"
                 android:text='@{dataUser.bornDate, default="Tanggal Lahir"}'
                 android:textSize="15sp"
+                android:textColor="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvFullname"/>
 
@@ -136,6 +141,7 @@
                 android:layout_height="wrap_content"
                 android:text='@{dataUser.address, default="Alamat"}'
                 android:textSize="15sp"
+                android:textColor="@color/gray"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tvBornDate"/>
 
@@ -201,6 +207,7 @@
                     android:text="@string/ubah_bahasa"
                     android:textSize="17sp"
                     android:textStyle="bold"
+                    android:textColor="@color/gray"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/imageView"
                     app:layout_constraintTop_toTopOf="parent" />

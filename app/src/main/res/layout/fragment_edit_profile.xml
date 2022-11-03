@@ -12,6 +12,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         tools:context=".view.profile.EditProfileFragment">
 
         <com.google.android.material.appbar.AppBarLayout
@@ -112,14 +113,16 @@
                 <com.google.android.material.textfield.TextInputLayout
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/gray">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etUsername"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@android:color/transparent"
-                        android:text='@{dataUserUpdate.username, default="null"}' />
+                        android:text='@{dataUserUpdate.username, default="null"}'
+                        android:textColor="@color/gray"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -143,7 +146,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@android:color/transparent"
-                        android:text='@{dataUserUpdate.fullname, default="null"}' />
+                        android:text='@{dataUserUpdate.fullname, default="null"}'
+                        android:textColor="@color/gray"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -171,7 +175,7 @@
                         android:background="@android:color/transparent"
                         android:padding="16dp"
                         android:text='@{dataUserUpdate.bornDate, default="null"}'
-                        android:textColorHint="@color/gray"
+                        android:textColor="@color/gray"
                         android:textSize="16sp"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -209,7 +213,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:backgroundTint="@android:color/transparent"
-                        android:text='@{dataUserUpdate.address, default="null"}' />
+                        android:text='@{dataUserUpdate.address, default="null"}'
+                        android:textColor="@color/gray"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 

@@ -14,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import binar.academy.challenge_chapter5.R
 import binar.academy.challenge_chapter5.data.datastore.UserPref
 import binar.academy.challenge_chapter5.databinding.FragmentSplashScreenBinding
+import com.google.android.gms.auth.api.signin.GoogleSignIn
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

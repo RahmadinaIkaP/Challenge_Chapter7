@@ -15,7 +15,11 @@ import binar.academy.challenge_chapter5.R
 import binar.academy.challenge_chapter5.data.datastore.UserPref
 import binar.academy.challenge_chapter5.databinding.FragmentProfileBinding
 import binar.academy.challenge_chapter5.viewmodel.AuthenticationViewModel
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.material.snackbar.Snackbar
+import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -27,6 +31,8 @@ class ProfileFragment : Fragment() {
 
     private lateinit var userPref: UserPref
     private val userViewModel : AuthenticationViewModel by viewModels()
+    private lateinit var firebaseAuth: FirebaseAuth
+    lateinit var mGoogleSignInClient: GoogleSignInClient
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,6 +46,13 @@ class ProfileFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         userPref = UserPref(requireContext())
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken(getString(R.string.default_web_client_id))
+            .requestEmail()
+            .build()
+        mGoogleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
 
         // get recently user info from api
         getUserData()
@@ -86,6 +99,10 @@ class ProfileFragment : Fragment() {
                 .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
                 .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
                 .show()
+
+            if (GoogleSignIn.getLastSignedInAccount(requireContext()) != null){
+                mGoogleSignInClient.signOut()
+            }
         }
     }
 

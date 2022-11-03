@@ -32,6 +32,13 @@ class UserPref(private val context : Context) {
         }
     }
 
+    suspend fun saveLoginData(username: String, status: Boolean){
+        context.dataStore.edit {
+            it[USERNAME] = username
+            it[STATUS_LOGIN] = status
+        }
+    }
+
     // variable for read data
     val username : Flow<String> = context.dataStore.data
         .map {
@@ -51,7 +58,7 @@ class UserPref(private val context : Context) {
     // function for logout
     suspend fun logoutUser(){
         context.dataStore.edit {
-            it.remove(STATUS_LOGIN)
+            it.clear()
         }
     }
 
