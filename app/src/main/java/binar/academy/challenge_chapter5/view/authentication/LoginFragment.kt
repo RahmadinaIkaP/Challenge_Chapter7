@@ -68,7 +68,9 @@ class LoginFragment : Fragment() {
         binding.apply {
 
             btnLogin.setOnClickListener {
-                login()
+                val email = etEmailLogin.text.toString()
+                val password = etPassLogin.text.toString()
+                login(email, password)
             }
 
             btnToRegister.setOnClickListener {
@@ -124,50 +126,46 @@ class LoginFragment : Fragment() {
         }
     }
 
-    private fun login() {
-        binding.apply {
-            val email = etEmailLogin.text.toString()
-            val password = etPassLogin.text.toString()
-            val listUser : MutableList<UserResponse> = mutableListOf()
+    fun login(email : String, password : String) {
+        val listUser : MutableList<UserResponse> = mutableListOf()
 
-            if (etEmailLogin.text!!.isEmpty() || etPassLogin.text!!.isEmpty()){
-                Snackbar.make(binding.root, getString(R.string.tidak_boleh_kosong), Snackbar.LENGTH_SHORT)
-                    .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
-                    .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
-                    .show()
-            }else{
-                authenticationViewModel.login()
-                authenticationViewModel.loginObserver().observe(viewLifecycleOwner){
-                    if (it != null){
-                        it.forEach { users ->
-                            listUser.addAll(mutableListOf(users))
-                        }
+        if (email.isEmpty() || password.isEmpty()){
+            Snackbar.make(requireView(), getString(R.string.tidak_boleh_kosong), Snackbar.LENGTH_SHORT)
+                .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
+                .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
+                .show()
+        }else{
+            authenticationViewModel.login()
+            authenticationViewModel.loginObserver().observe(viewLifecycleOwner){
+                if (it != null){
+                    it.forEach { users ->
+                        listUser.addAll(mutableListOf(users))
+                    }
 
-                        val currentUser = listUser.filter { it.email == email && it.password == password }
-                        if (currentUser.isNotEmpty()){
-                            inputUsernameSharePreferences(currentUser[0].id, currentUser[0].username,true)
+                    val currentUser = listUser.filter { it.email == email && it.password == password }
+                    if (currentUser.isNotEmpty()){
+                        inputUsernameSharePreferences(currentUser[0].id, currentUser[0].username,true)
 
-                            Snackbar.make(binding.root, getString(R.string.login_berhasil), Snackbar.LENGTH_SHORT)
-                                .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
-                                .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
-                                .show()
+                        Snackbar.make(requireView(), getString(R.string.login_berhasil), Snackbar.LENGTH_SHORT)
+                            .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
+                            .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
+                            .show()
 
-                            Log.d("User", currentUser.toString())
+                        Log.d("User", currentUser.toString())
 
-                            listUser.clear()
-                            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
-                        }else{
-                            Snackbar.make(binding.root, getString(R.string.email_password_salah), Snackbar.LENGTH_SHORT)
-                                .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
-                                .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
-                                .show()
-                        }
+                        listUser.clear()
+                        findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
                     }else{
-                        Snackbar.make(binding.root, getString(R.string.login_gagal), Snackbar.LENGTH_SHORT)
+                        Snackbar.make(binding.root, getString(R.string.email_password_salah), Snackbar.LENGTH_SHORT)
                             .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
                             .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
                             .show()
                     }
+                }else{
+                    Snackbar.make(binding.root, getString(R.string.login_gagal), Snackbar.LENGTH_SHORT)
+                        .setBackgroundTint(ContextCompat.getColor(requireContext(), R.color.light_gray))
+                        .setTextColor(ContextCompat.getColor(requireContext(), R.color.dark_blue))
+                        .show()
                 }
             }
         }
