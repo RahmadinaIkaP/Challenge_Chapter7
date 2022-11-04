@@ -21,6 +21,19 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    flavorDimensions 'version'
+    productFlavors{
+        verOne{
+            applicationId "binar.academy.challenge_chapter5"
+            versionNameSuffix "-verOne"
+            dimension 'version'
+        }
+        verTwo{
+            applicationIdSuffix ".verTwo"
+            versionNameSuffix "-verTwo"
+            dimension 'version'
+        }
+    }
     packagingOptions {
         resources.excludes.add("META-INF/*")
     }

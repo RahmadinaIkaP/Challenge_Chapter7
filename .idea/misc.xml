@@ -22,7 +22,14 @@
         <entry key="..\:/Materi-Kuliah/AndroidStudioProjects/Challenge_Chapter5/app/src/main/res/layout/fragment_setting_language.xml" value="0.264" />
         <entry key="..\:/Materi-Kuliah/AndroidStudioProjects/Challenge_Chapter5/app/src/main/res/layout/fragment_splash_screen.xml" value="0.23229166666666667" />
         <entry key="..\:/Materi-Kuliah/AndroidStudioProjects/Challenge_Chapter5/app/src/main/res/layout/item_film.xml" value="0.1734375" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_account.xml" value="0.202" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_calendar.xml" value="0.2425" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_edit_profile.xml" value="0.1955" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_home.xml" value="0.23645833333333333" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_login.xml" value="0.23645833333333333" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_register.xml" value="0.23645833333333333" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1838768115942029" />
       </map>
     </option>
   </component>
