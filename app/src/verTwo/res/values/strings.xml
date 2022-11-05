@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Disney App Ver 1.0</string>
+    <string name="app_name">Disney App Ver 2.0</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="login">Login</string>
     <string name="input_email_anda">Masukkan email anda</string>
@@ -39,7 +39,7 @@
     <string name="bahasa_inggris">Bahasa Inggris</string>
     <string name="logout_berhasil">Logout berhasil!</string>
     <string name="pilih_tanggal">Pilih Tanggal</string>
-<!-- TODO: Remove or change this placeholder text -->>
+    <!-- TODO: Remove or change this placeholder text -->>
     <string name="detail_karakter">Detail Karakter</string>
     <string name="favorite">Favorit</string>
     <string name="berhasil_favorit">Berhasil menambahkan ke favorit!</string>
