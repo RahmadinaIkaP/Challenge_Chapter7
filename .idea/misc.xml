@@ -26,10 +26,18 @@
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_calendar.xml" value="0.2425" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_edit_profile.xml" value="0.1955" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_favorite.xml" value="0.2295" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2295" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/drawable/ic_settings.xml" value="0.2295" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_detail_disney_chara.xml" value="0.2341485507246377" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_edit_profile.xml" value="0.2341485507246377" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_favorited_list.xml" value="0.2341485507246377" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_home.xml" value="0.23645833333333333" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_login.xml" value="0.23645833333333333" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_profile.xml" value="0.2341485507246377" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_register.xml" value="0.23645833333333333" />
         <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1838768115942029" />
+        <entry key="..\:/StudioProjects/Challenge_Chapter7/app/src/main/res/layout/item_film.xml" value="0.2341485507246377" />
       </map>
     </option>
   </component>

@@ -47,5 +47,7 @@
     <string name="permission_denied_msg">Permission is denied, Please allow permissions from settings</string>
     <string name="settings">Settings</string>
     <string name="cancel">Cancel</string>
-    <string name="pilih_gambar">Choose image</string>
+    <string name="logout">Logout</string>
+    <string name="atau_login_dengan">Or login with</string>
+    <string name="google">Google</string>
 </resources>

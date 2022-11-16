@@ -30,7 +30,8 @@
         android:src="@drawable/gambar1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeadlineLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/tvHeadlineLogin"
+        tools:ignore="ContentDescription" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -115,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:text="Atau login dengan"
+            android:text="@string/atau_login_dengan"
             android:textSize="16sp"
             android:textColor="@color/gray"/>
 
@@ -142,13 +143,14 @@
         <ImageView
             android:layout_width="25dp"
             android:layout_height="25dp"
-            android:src="@drawable/google_logo" />
+            android:src="@drawable/google_logo"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:text="Google"
+            android:text="@string/google"
             android:textColor="@color/gray"
             android:textSize="18sp"
             android:textStyle="bold" />

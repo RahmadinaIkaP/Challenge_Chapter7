@@ -6,7 +6,7 @@
     <data>
         <variable
             name="dataUserUpdate"
-            type="binar.academy.challenge_chapter5.model.UserResponse" />
+            type="binar.academy.challenge_chapter5_rahmadina.model.UserResponse" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,7 +54,8 @@
                         android:src="@drawable/ic_baseline_arrow_back_24"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:ignore="ContentDescription" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -97,7 +98,8 @@
                         android:layout_alignParentEnd="true"
                         android:layout_alignParentBottom="true"
                         android:background="@drawable/background_rounded"
-                        android:src="@drawable/ic_edit_profile" />
+                        android:src="@drawable/ic_edit_profile"
+                        tools:ignore="ContentDescription" />
 
                 </RelativeLayout>
 
@@ -189,7 +191,8 @@
                         android:src="@drawable/ic_calendar"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/etBornDate" />
+                        app:layout_constraintTop_toTopOf="@+id/etBornDate"
+                        tools:ignore="ContentDescription" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

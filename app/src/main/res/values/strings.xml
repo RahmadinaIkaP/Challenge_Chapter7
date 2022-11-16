@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Disney App Ver 1.0</string>
+    <string name="app_name">Disney App</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="login">Login</string>
     <string name="input_email_anda">Masukkan email anda</string>

@@ -46,7 +46,8 @@
                     android:src="@drawable/ic_baseline_arrow_back_24"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -79,7 +80,8 @@
                 android:id="@+id/ivDisneyCharaDetail"
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
-                android:src="@drawable/ic_launcher_background" />
+                android:src="@drawable/ic_launcher_background"
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:id="@+id/tvCharaName"
@@ -87,7 +89,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
-                android:text="Nama Karakter"
+                android:text="@string/nama_karakter"
                 android:textSize="18sp"
                 android:textColor="@color/gray"/>
 
@@ -115,7 +117,7 @@
                     android:id="@+id/tvFilmAppear"
                     android:layout_width="290dp"
                     android:layout_height="wrap_content"
-                    android:text="-"
+                    android:text="@string/strip"
                     android:textSize="16sp"
                     android:textColor="@color/gray"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -148,7 +150,7 @@
                     android:id="@+id/tvShortFilmAppear"
                     android:layout_width="226dp"
                     android:layout_height="wrap_content"
-                    android:text="-"
+                    android:text="@string/strip"
                     android:textSize="16sp"
                     android:textColor="@color/gray"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -181,7 +183,7 @@
                     android:id="@+id/tvTvShowsAppear"
                     android:layout_width="250dp"
                     android:layout_height="wrap_content"
-                    android:text="-"
+                    android:text="@string/strip"
                     android:textSize="16sp"
                     android:textColor="@color/gray"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -214,7 +216,7 @@
                     android:id="@+id/tvGamesAppear"
                     android:layout_width="188dp"
                     android:layout_height="wrap_content"
-                    android:text="-"
+                    android:text="@string/strip"
                     android:textSize="16sp"
                     android:textColor="@color/gray"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -236,6 +238,7 @@
         android:layout_margin="16dp"
         android:src="@drawable/ic_unfav"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="ContentDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

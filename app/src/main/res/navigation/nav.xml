@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashScreenFragment"
-        android:name="binar.academy.challenge_chapter5.view.splashscreen.SplashScreenFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.splashscreen.SplashScreenFragment"
         android:label="fragment_splash_screen"
         tools:layout="@layout/fragment_splash_screen" >
         <action
@@ -23,7 +23,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="binar.academy.challenge_chapter5.view.authentication.LoginFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.authentication.LoginFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login">
         <action
@@ -37,7 +37,7 @@
     </fragment>
     <fragment
         android:id="@+id/registerFragment"
-        android:name="binar.academy.challenge_chapter5.view.authentication.RegisterFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.authentication.RegisterFragment"
         android:label="RegisterFragment"
         tools:layout="@layout/fragment_register">
         <action
@@ -48,7 +48,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="binar.academy.challenge_chapter5.view.HomeFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="binar.academy.challenge_chapter5.view.profile.ProfileFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.profile.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" >
         <action
@@ -85,31 +85,31 @@
     </fragment>
     <fragment
         android:id="@+id/detailFilmFragment"
-        android:name="binar.academy.challenge_chapter5.view.disneycharacter.DetailDisneyCharaFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.disneycharacter.DetailDisneyCharaFragment"
         android:label="fragment_detail_film"
         tools:layout="@layout/fragment_detail_disney_chara" >
         <argument
             android:name="idDiscneyChara"
-            app:argType="binar.academy.challenge_chapter5.model.DisneyCharaResponse" />
+            app:argType="binar.academy.challenge_chapter5_rahmadina.model.DisneyCharaResponse" />
     </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
-        android:name="binar.academy.challenge_chapter5.view.profile.EditProfileFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.profile.EditProfileFragment"
         android:label="fragment_edit_profile"
         tools:layout="@layout/fragment_edit_profile" >
         <argument
             android:name="userProfile"
-            app:argType="binar.academy.challenge_chapter5.model.UserResponse"
+            app:argType="binar.academy.challenge_chapter5_rahmadina.model.UserResponse"
             app:nullable="true" />
     </fragment>
     <dialog
         android:id="@+id/settingLanguageFragment"
-        android:name="binar.academy.challenge_chapter5.view.profile.SettingLanguageFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.profile.SettingLanguageFragment"
         android:label="fragment_setting_language"
         tools:layout="@layout/fragment_setting_language" />
     <fragment
         android:id="@+id/favoritedListFragment"
-        android:name="binar.academy.challenge_chapter5.view.favoritedChar.FavoritedListFragment"
+        android:name="binar.academy.challenge_chapter5_rahmadina.view.favoritedChar.FavoritedListFragment"
         android:label="fragment_favorited_list"
         tools:layout="@layout/fragment_favorited_list" />
 </navigation>
